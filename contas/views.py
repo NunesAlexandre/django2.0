@@ -6,16 +6,20 @@ def index(request):
     return render(request, 'contas/index.html')
 
 def cadastro(request):
-    return render(request, 'contas/sistema/cadastro-clientes.html')
+    return render(request, 'contas/cadastro-clientes.html')
 
 def contato(request):
-	return render(request, 'contas/sistema/contato.html')
+	return render(request, 'contas/contato.html')
 
 def sobre(request):
-	return render(request, 'contas/sistema/quem-somos.html')
+	return render(request, 'contas/quem-somos.html')
 
 def novasenha(request):
-	return render(request, 'contas/sistema/nova-senha.html')
+	return render(request, 'contas/nova-senha.html')
+
+def base(request):
+	return render(request, 'contas/base.html')
+
 
 
 
