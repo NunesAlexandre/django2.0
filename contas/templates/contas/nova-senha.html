@@ -5,11 +5,16 @@
 
   
 <h4 class="mb-4 text-center text-dark">Seu email cadastrado</h4>
-<form>
+    <form method="post" action="#" class="needs-validacao" novalidate>
+  
+
   <div class="form-group">
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+      <input type="email" required class="form-control" id="exampleFormControlInput1" aria-describedby="inputGroupPrependEmail" placeholder="nome@exemplo.com">
+  	  <div class="invalid-feedback" >
+         Digite seu email!
+      </div>
   </div>
-  <button type="button" class="btn btn-success">Enviar</button>
+  <button type="submit" class="btn btn-success">Enviar</button>
 </form>     
 
 {% endblock %}

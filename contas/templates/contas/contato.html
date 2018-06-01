@@ -7,16 +7,23 @@
 
 <h4 class="mb-4 text-center text-dark">Preencha os campos abaixo.</h4>
 
-  <form>
-    <div class="form-group">
-      <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
-    </div>
-    
-    <div class="form-group">
-      <textarea  required class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva aqui sua mensagem."></textarea>
-    </div>
+   <form method="post" action="#" class="needs-validacao" novalidate>
 
-      <button type="submit" class="btn btn-outline-success btn btn-block" >Enviar</button>
+	    <div class="form-group">
+	      <input type="email" required class="form-control" aria-describedby="inputGroupPrependEmail" id="exampleFormControlInput1" placeholder="Digite seu email">
+	       <div class="invalid-feedback" >
+		         Digite seu email!
+		    </div>
+		</div>
+	    
+	    <div class="form-group">
+	      <textarea  required class="form-control" aria-describedby="inputGroupPrependMensagem" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva aqui sua mensagem."></textarea>
+	        <div class="invalid-feedback" >
+		         Digite sua mensagem!
+		    </div>
+	    </div>
+
+	      <button type="submit" class="btn btn-outline-success btn btn-block" >Enviar</button>
   </form>  
  
 
